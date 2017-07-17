@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人网站-首页</title>
+		<link href="css/01.css" rel="stylesheet" type="text/css" />
+		<style>
+			.div3{
+				width:100%;
+				position: relative;
+				height: 500px;
+				color: white;
+				/*border: red 1px dashed;*/
+				}
+			#music1{
+				width: 500px;
+				height: 500px;
+				float: right;
+				position: absolute;
+				right: 200px;
+				top: 0px;
+				/*border: red 1px dashed;*/
+				overflow-y: scroll; 
+				overflow-x: scroll;
+				text-align: center;
+			}
+			.music2{
+				width: 300px;
+				height: 300px;
+				margin-top:50px ;
+				margin-left:150px ;
+				background-color:green ;
+				background-image:url(img/cp.jpg);
+				background-size: 100% 100%;
+				border-radius: 50%;
+				background-position:5px 4px ;
+				animation: name2 3s linear 0s infinite;
+				/*border: blue 2px solid;*/
+			}
+			.music3{
+				width: 300px;
+				height: 100px;
+				margin-left:150px ;
+				/*border: red 1px solid;*/
+			}
+			@keyframes name2{
+				from{
+					transform: rotate(0deg);
+					border-radius: 50%;
+				}
+				25%{
+					transform: rotate(90deg);
+					border-radius: 50%;
+				}
+				50%{
+					transform: rotate(180deg);
+					border-radius: 50%;
+				}
+				75%{
+					transform: rotate(270deg);
+					border-radius: 50%;
+				}
+				to{
+					transform: rotate(360deg);
+					border-radius: 50%;
+				}
+			}
+		</style>
+		<script type="text/javascript">  
+    function startmarquee(lh, speed, delay) {  
+        var t;  
+        var oHeight = 500;/** div的高度 **/　  
+        var p = false;  
+        var o = document.getElementById("music1");  
+        var preTop = 0;  
+        o.scrollTop = 0;  
+        function start() {  
+            t = setInterval(scrolling, speed);  
+            o.scrollTop += 1;  
+        }  
+        function scrolling() {  
+            if (o.scrollTop % lh != 0  
+                    && o.scrollTop % (o.scrollHeight - oHeight - 1) != 0) {  
+                preTop = o.scrollTop;  
+                o.scrollTop += 1;  
+                if (preTop >= o.scrollHeight || preTop == o.scrollTop) {  
+                    o.scrollTop = 0;  
+                }  
+            } else {  
+                clearInterval(t);  
+                setTimeout(start, delay);  
+            }  
+        }  
+        setTimeout(start, delay);  
+    }  
+    window.onload=function(){  
+        /**startmarquee(一次滚动高度,速度,停留时间);**/　　  
+        window.setTimeout("startmarquee(20, 20, 2500); ",35000)
+         
+    }  
+  
+</script>  
+	</head>
+	<body>
+		<div id="father">
+			<div><a name="marker"></a></div>
+			<div class="div1">
+				<h1>personal&nbsp;&nbsp;&nbsp;&nbsp;website</h1>
+				<div class="div1-1"><a href="input.html">退出</a></div>
+				<div class="div1-2"><a href="liuyan.html">留言板</a></div>
+				<div class="div1-3">
+					菜单
+					<div class="div1-3-1">
+						<div class="xiala">
+							<a href="music.html">music</a>	
+						</div>
+						<div class="xiala">
+							<a href="#">未来规划</a>		
+						</div>
+						<div class="xiala">
+							<a href="001.html">返回首页</a>	
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="div2">
+				<!--<img src="img/002.jpg" alt="放飞梦想" title="放飞梦想"  width="100%" height="200px" />-->
+					<br /><br /><br />
+					<span><a href="001.html">Home</a></span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span><a href="003.html">Personal introduction</a></span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span><a href="002.html">College</a></span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span><a href="004.html">Team</a></span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span><a href="005.html">Movies</a></span>
+			</div>
+			<div class="div3">
+				<div id="music1">
+					光辉岁月<br />
+					钟声响起归家的讯号<br />
+					在他生命里<br />
+					彷佛带点唏嘘<br />
+					黑色肌肤给他的意义<br />
+					是一生奉献 肤色斗争中<br />
+					年月把拥有变做失去<br />
+					疲倦的双眼带著期望<br />
+					今天只有残留的躯壳<br />
+					迎接光辉岁月<br />
+					风雨中抱紧自由<br />
+					一生经过彷徨的挣扎<br />
+					自信可改变未来<br />
+					问谁又能做到<br />
+					可否不分肤色的界线<br />
+					愿这土地里<br />
+					不分你我高低<br />
+					缤纷色彩显出的美丽<br />
+					是因它没有<br />
+					分开每种色彩<br />
+					年月把拥有变做失去<br />
+					疲倦的双眼带著期望<br />
+					今天只有残留的躯壳<br />
+					迎接光辉岁月<br />
+					风雨中抱紧自由<br />
+					一生经过彷徨的挣扎<br />
+					自信可改变未来<br />
+					问谁又能做到<br />
+					今天只有残留的躯壳<br />
+					迎接光辉岁月<br />
+					风雨中抱紧自由<br />
+					一生经过彷徨的挣扎<br />
+					自信可改变未来<br />
+					问谁又能做到<br />
+					今天只有残留的躯壳<br />
+					迎接光辉岁月<br />
+					风雨中抱紧自由<br />
+					一生经过彷徨的挣扎<br />
+					自信可改变未来<br />
+					问谁又能做到<br />
+					今天只有残留的躯壳<br />
+					迎接光辉岁月<br />
+					风雨中抱紧自由<br />
+					一生经过彷徨的挣扎<br />
+				</div>
+				<div class="music2"></div>
+				<div class="music3">
+					<br />
+					<audio controls>
+						<source src="music/Beyond - 光辉岁月.mp3" type="audio/mp3"></source>
+					</audio>
+				</div>
+			</div>
+			<div class="div4">
+				<a href="https://www.baidu.com">百度</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="http://www.bjbdqn.com.cn/?b-p-d-qg-100582">北大青鸟</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="#">邮箱</a>
+				<a href="#marker">
+					<img src="img/top.png" alt="返回顶部" title="返回顶部"  />
+				</a>
+				<br />
+				&copy;北大青鸟版权所有 
+			</div>
+			
+		</div>
+	</body>
+</html>
